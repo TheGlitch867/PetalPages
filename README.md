@@ -75,7 +75,26 @@ Every page ships with hand-picked scenic artwork — meadows, oceans, auroras, c
 
 ---
 
-## Get started
+## Download (Windows x64)
+
+Ready to try PetalPages? Grab the latest build from **[GitHub Releases](https://github.com/TheGlitch867/PetalPages/releases/latest)**.
+
+| File | Description |
+| --- | --- |
+| **PetalPages_0.1.0_x64-setup.exe** | Recommended — installs PetalPages on your PC |
+| **PetalPages_0.1.0_x64.exe** | Standalone unsigned app binary |
+
+**Before you install**
+
+- **Windows 64-bit only** (x64)
+- **Unsigned build** — Windows SmartScreen may warn on first run; choose *More info* → *Run anyway* if you trust this download
+- **WebView2 required** — [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (usually already on Windows 11)
+
+No account is required to use the app locally. Cloud sync is optional — see [Cloud sync](#cloud-sync-optional) below.
+
+---
+
+## Develop from source
 
 ### Prerequisites
 

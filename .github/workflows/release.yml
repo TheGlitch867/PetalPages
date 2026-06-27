@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and publish release
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: PetalPages ${{ github.ref_name }}
+          releaseBody: |
+            Windows x64 build of PetalPages (unsigned).
+
+            **Downloads**
+            - `PetalPages_*_x64-setup.exe` — recommended installer
+            - `PetalPages_*_x64.exe` — standalone app binary
+
+            **Notes**
+            - Unsigned build: Windows SmartScreen may show a warning on first run.
+            - Requires [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (preinstalled on most Windows 11 PCs).
+          releaseDraft: false
+          prerelease: false
+          args: --target x86_64-pc-windows-msvc
+          includeUpdaterJson: false
+          renameTemplate: "PetalPages_[version]_x64-setup.exe"
