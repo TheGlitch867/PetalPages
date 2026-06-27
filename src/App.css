@@ -1,0 +1,310 @@
+:root {
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111;
+  background-color: #fafaf8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.app__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.app--blocked .nav,
+.app--blocked .app__content {
+  pointer-events: none;
+  user-select: none;
+}
+
+.app--blocked .app__content {
+  filter: blur(2px);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  flex-shrink: 0;
+  padding: 16px 12px;
+  border-right: 1px solid color-mix(in srgb, var(--nav-text, #111) 18%, transparent);
+  background: var(--nav-bg, #fff);
+  color: var(--nav-text, #111);
+  min-height: 100vh;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--nav-text, #111);
+  padding: 4px 12px 16px;
+  border-bottom: 1px solid color-mix(in srgb, var(--nav-text, #111) 12%, transparent);
+  margin-bottom: 12px;
+}
+
+.nav__brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.nav__brand-title {
+  line-height: 1;
+}
+
+.nav__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.nav__footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--nav-text, #111) 12%, transparent);
+}
+
+.nav__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.nav__author {
+  margin: 12px 0 0;
+  padding: 0 4px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--nav-text, #111) 65%, transparent);
+  text-align: center;
+  font-style: italic;
+}
+
+.nav__email {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--nav-text, #111) 85%, transparent);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 4px;
+}
+
+.nav__auth {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav__auth-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.nav__auth-btn--outline {
+  border: 1px solid color-mix(in srgb, var(--nav-text, #111) 35%, transparent);
+  background: color-mix(in srgb, var(--nav-bg, #fff) 92%, var(--nav-text, #111) 8%);
+  color: var(--nav-text, #111);
+}
+
+.nav__auth-btn--outline:hover {
+  background: color-mix(in srgb, var(--nav-bg, #fff) 82%, var(--nav-text, #111) 18%);
+  border-color: color-mix(in srgb, var(--nav-text, #111) 55%, transparent);
+}
+
+.nav__auth-btn--primary {
+  border: 1px solid var(--nav-text, #111);
+  background: var(--nav-text, #111);
+  color: var(--nav-bg, #fff);
+}
+
+.nav__auth-btn--primary:hover {
+  background: color-mix(in srgb, var(--nav-text, #111) 85%, var(--nav-bg, #fff) 15%);
+  border-color: color-mix(in srgb, var(--nav-text, #111) 85%, var(--nav-bg, #fff) 15%);
+}
+
+.nav__badge {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--nav-text, #111) 10%, var(--nav-bg, #fff));
+  color: color-mix(in srgb, var(--nav-text, #111) 80%, transparent);
+  text-align: center;
+}
+
+.nav__badge--ok {
+  background: #e6f4ef;
+  color: #0a6640;
+}
+
+.nav__badge--local {
+  background: #fff3e0;
+  color: #8a5a00;
+}
+
+.sync-banner {
+  padding: 10px 24px;
+  background: #fdecea;
+  color: #b00020;
+  font-size: 13px;
+  border-bottom: 1px solid #f5c6c6;
+  flex-shrink: 0;
+}
+
+.loading-screen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 15px;
+}
+
+.nav__tab {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--nav-text, #111) 72%, transparent);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.nav__tab:hover {
+  background: color-mix(in srgb, var(--nav-text, #111) 10%, var(--nav-bg, #fff));
+  color: var(--nav-text, #111);
+}
+
+.nav__tab--active {
+  background: var(--nav-text, #111);
+  color: var(--nav-bg, #fff);
+}
+
+.nav__tab--active:hover {
+  background: color-mix(in srgb, var(--nav-text, #111) 88%, var(--nav-bg, #fff) 12%);
+  color: var(--nav-bg, #fff);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.main:has(> .page-background) {
+  background: #1a1f1c;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (max-width: 720px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 100%;
+    min-height: auto;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+  }
+
+  .nav__brand {
+    font-size: 24px;
+    padding: 0 8px 12px;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+
+  .nav__brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav__tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: none;
+    overflow: visible;
+    gap: 4px;
+  }
+
+  .nav__tab {
+    width: auto;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .nav__footer {
+    margin-top: 12px;
+  }
+
+  .nav__actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav__auth {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .nav__auth-btn {
+    width: auto;
+    flex: 1;
+  }
+}

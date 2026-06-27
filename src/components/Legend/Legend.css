@@ -1,0 +1,26 @@
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  min-width: 120px;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend__swatch {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.legend__label {
+  font-size: 14px;
+  color: #222;
+  white-space: nowrap;
+}

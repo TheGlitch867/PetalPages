@@ -1,0 +1,196 @@
+.trends-chart {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 20px 20px 12px;
+}
+
+.trends-chart__legend {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.trends-chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #444;
+}
+
+.trends-chart__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.trends-chart__dot--mood {
+  background: #5bbfb5;
+}
+
+.trends-chart__dot--anxiety {
+  background: #e878a0;
+}
+
+.trends-chart__dot--fitness {
+  background: #1e90ff;
+}
+
+.trends-chart__dot--reading {
+  background: #6b3fa0;
+}
+
+.trends-chart__dot--stress {
+  background: #ff7043;
+}
+
+.trends-chart__dot--crying {
+  background: #42a5f5;
+}
+
+.trends-chart__dot--sleep {
+  background: #7e57c2;
+}
+
+.trends-chart__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trends-chart__grid {
+  stroke: #eee;
+  stroke-width: 1;
+}
+
+.trends-chart__ylabel {
+  font-size: 11px;
+  fill: #888;
+}
+
+.trends-chart__xlabel {
+  font-size: 11px;
+  fill: #666;
+}
+
+.trends-chart__line {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trends-chart__line--mood {
+  stroke: #5bbfb5;
+}
+
+.trends-chart__line--anxiety {
+  stroke: #e878a0;
+}
+
+.trends-chart__line--fitness {
+  stroke: #1e90ff;
+}
+
+.trends-chart__line--reading {
+  stroke: #6b3fa0;
+}
+
+.trends-chart__line--stress {
+  stroke: #ff7043;
+}
+
+.trends-chart__line--crying {
+  stroke: #42a5f5;
+}
+
+.trends-chart__line--sleep {
+  stroke: #7e57c2;
+}
+
+.trends-chart__point {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.trends-chart__point--mood {
+  fill: #5bbfb5;
+}
+
+.trends-chart__point--anxiety {
+  fill: #e878a0;
+}
+
+.trends-chart__point--fitness {
+  fill: #1e90ff;
+}
+
+.trends-chart__point--reading {
+  fill: #6b3fa0;
+}
+
+.trends-chart__point--stress {
+  fill: #ff7043;
+}
+
+.trends-chart__point--crying {
+  fill: #42a5f5;
+}
+
+.trends-chart__point--sleep {
+  fill: #7e57c2;
+}
+
+.trends-chart__avg {
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+.trends-chart__avg--mood {
+  stroke: #5bbfb5;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--anxiety {
+  stroke: #e878a0;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--fitness {
+  stroke: #1e90ff;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--reading {
+  stroke: #6b3fa0;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--stress {
+  stroke: #ff7043;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--crying {
+  stroke: #42a5f5;
+  opacity: 0.55;
+}
+
+.trends-chart__avg--sleep {
+  stroke: #7e57c2;
+  opacity: 0.55;
+}
+
+.trends-chart__avg-label {
+  font-size: 10px;
+}
+
+.trends-chart__avg-label--mood {
+  fill: #3a9a91;
+}
+
+.trends-chart__avg-label--anxiety {
+  fill: #c45a82;
+}

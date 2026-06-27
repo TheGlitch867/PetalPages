@@ -1,0 +1,67 @@
+.alphabet-color-picker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.alphabet-color-picker__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.alphabet-color-picker__trigger:hover {
+  background: #f5f5f5;
+}
+
+.alphabet-color-picker__trigger-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.alphabet-color-picker__popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 6px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  width: 120px;
+}
+
+.alphabet-color-picker__swatch {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alphabet-color-picker__swatch:hover {
+  transform: scale(1.08);
+}
+
+.alphabet-color-picker__swatch--selected {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333;
+}
+
+.alphabet-color-picker__swatch:focus-visible {
+  outline: 2px solid #6b3fa0;
+  outline-offset: 1px;
+}

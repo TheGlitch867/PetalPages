@@ -1,0 +1,226 @@
+.sleep-tracker-page .page-background__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 48px;
+  user-select: none;
+}
+
+.sleep-tracker-page__header {
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 960px;
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sleep-tracker-page__title {
+  font-family: "Caveat", cursive;
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.sleep-tracker-page__sub {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+.sleep-tracker-page__month-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sleep-tracker-page__month-nav button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.sleep-tracker-page__month-nav button:hover {
+  background: #f5f5f5;
+}
+
+.sleep-tracker-page__header .sleep-color-picker {
+  margin: 16px auto 0;
+}
+
+.sleep-tracker-page__grid-wrap {
+  width: 100%;
+  max-width: 960px;
+  overflow-x: auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sleep-tracker-grid {
+  display: flex;
+  flex-direction: column;
+  min-width: 720px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.sleep-tracker-grid__header,
+.sleep-tracker-grid__hours {
+  display: grid;
+  grid-template-columns: 32px repeat(6, 1fr) repeat(12, 1fr) 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sleep-tracker-grid__header {
+  background: #fafafa;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+}
+
+.sleep-tracker-grid__period {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sleep-tracker-grid__period--pm {
+  grid-column: 2 / span 6;
+  border-right: 1px solid #eee;
+}
+
+.sleep-tracker-grid__period--am {
+  grid-column: 8 / span 12;
+  border-right: 1px solid #eee;
+}
+
+.sleep-tracker-grid__quality-head {
+  grid-column: 20;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.2;
+}
+
+.sleep-tracker-grid__hours {
+  background: #fafafa;
+}
+
+.sleep-tracker-grid__corner {
+  grid-column: 1;
+}
+
+.sleep-tracker-grid__hour-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+  padding: 4px 0;
+  border-right: 1px solid #f0f0f0;
+}
+
+.sleep-tracker-grid__hours .sleep-tracker-grid__quality-head {
+  grid-row: auto;
+  border-left: 1px solid #eee;
+}
+
+.sleep-tracker-grid__row {
+  display: grid;
+  grid-template-columns: 32px repeat(6, 1fr) repeat(12, 1fr) 100px;
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 28px;
+}
+
+.sleep-tracker-grid__row--invalid {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.sleep-tracker-grid__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  border-right: 1px solid #f0f0f0;
+  background: #fafafa;
+  padding: 2px 0;
+}
+
+.sleep-tracker-grid__day-color {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sleep-tracker-grid__day-color:hover {
+  transform: scale(1.15);
+}
+
+.sleep-tracker-grid__cell {
+  min-height: 26px;
+  padding: 0;
+  border: none;
+  border-right: 1px solid #f5f5f5;
+  background: #fff;
+  cursor: crosshair;
+}
+
+.sleep-tracker-grid__cell--asleep {
+  border-right-color: rgba(0, 0, 0, 0.06);
+}
+
+.sleep-tracker-grid__cell--disabled {
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.sleep-tracker-grid__cell:not(.sleep-tracker-grid__cell--disabled):hover {
+  background: #fce4ec;
+}
+
+.sleep-tracker-grid__cell--asleep:not(.sleep-tracker-grid__cell--disabled):hover {
+  opacity: 0.85;
+}
+
+.sleep-tracker-grid__quality {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+  border-left: 1px solid #eee;
+}

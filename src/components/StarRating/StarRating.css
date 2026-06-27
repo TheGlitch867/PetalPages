@@ -1,0 +1,32 @@
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.star-rating__star {
+  border: none;
+  background: transparent;
+  padding: 0 1px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1.2px #222;
+  transition: transform 0.1s ease;
+}
+
+.star-rating__star:hover {
+  transform: scale(1.15);
+}
+
+.star-rating__star--filled {
+  color: #fbc02d;
+  -webkit-text-stroke: 1.2px #222;
+}
+
+.star-rating__star:focus-visible {
+  outline: 2px solid #6b3fa0;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

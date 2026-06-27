@@ -1,0 +1,120 @@
+.account-page .page-background__content {
+  padding: 24px 24px 48px;
+}
+
+.account-page__panel {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.account {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.account__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #111;
+}
+
+.account__text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.account__signed-in {
+  font-size: 15px;
+  margin: 0 0 12px;
+  color: #222;
+}
+
+.account__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.account__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.account__field input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.account__button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.account__button:hover:not(:disabled) {
+  background: #333;
+}
+
+.account__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.account__button--secondary {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+.account__button--secondary:hover {
+  background: #f5f5f5;
+}
+
+.account__toggle {
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #444;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.account__error {
+  margin: 0;
+  font-size: 13px;
+  color: #b00020;
+}
+
+.account__message {
+  margin: 0;
+  font-size: 13px;
+  color: #0a6640;
+}
+
+.account code {
+  font-size: 12px;
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
