@@ -1,0 +1,7 @@
+/* Shared frosted panel — use with page-background__panel */
+.page-with-background__panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}

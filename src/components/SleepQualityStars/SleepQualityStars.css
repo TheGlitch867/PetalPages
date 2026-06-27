@@ -1,0 +1,32 @@
+.sleep-quality-stars {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sleep-quality-stars__star {
+  border: none;
+  background: transparent;
+  padding: 0 1px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px #666;
+}
+
+.sleep-quality-stars__star:hover {
+  transform: scale(1.12);
+}
+
+.sleep-quality-stars__star--filled {
+  color: #fbc02d;
+  -webkit-text-stroke: 1px #222;
+}
+
+.sleep-quality-stars__star:focus-visible {
+  outline: 2px solid #6b3fa0;
+  outline-offset: 1px;
+  border-radius: 2px;
+}

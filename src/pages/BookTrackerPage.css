@@ -1,0 +1,50 @@
+.book-tracker-page .page-background__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.book-tracker-page__title {
+  font-family: "Caveat", cursive;
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.book-tracker-page__sub {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.book-tracker-page__stats {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 20px;
+}
+
+.book-tracker-page__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 12px;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .book-tracker-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 440px) {
+  .book-tracker-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,104 @@
+.page-text-settings {
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.page-text-settings__title {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.settings .page-text-settings__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.page-text-settings__hint {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.page-text-settings__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page-text-settings__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 160px) 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.page-text-settings__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+.page-text-settings__swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.page-text-settings__swatch {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.page-text-settings__swatch--bordered {
+  border-color: #ccc;
+}
+
+.page-text-settings__swatch--selected {
+  border-color: #333;
+  box-shadow: 0 0 0 1px #fff inset;
+}
+
+.page-text-settings__swatch:hover {
+  transform: scale(1.08);
+}
+
+.page-text-settings__reset {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+  white-space: nowrap;
+}
+
+.page-text-settings__reset:hover {
+  background: #f3f3f3;
+}
+
+@media (max-width: 720px) {
+  .page-text-settings__row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-text-settings__reset {
+    justify-self: start;
+  }
+}

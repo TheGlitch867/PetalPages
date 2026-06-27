@@ -1,0 +1,52 @@
+.google-sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid #747775;
+  border-radius: 999px;
+  background: #fff;
+  color: #1f1f1f;
+  font-family: Roboto, "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.google-sign-in:hover:not(:disabled) {
+  background: #f8f8f8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.google-sign-in:active:not(:disabled) {
+  background: #f1f1f1;
+}
+
+.google-sign-in:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.google-sign-in__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.google-sign-in__icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.google-sign-in__text {
+  line-height: 1;
+}

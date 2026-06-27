@@ -1,0 +1,22 @@
+.book-tris-preview {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.book-tris-preview-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.book-tris-preview-btn:hover .book-tris-preview__cell {
+  filter: brightness(0.92);
+}
+
+.book-tris-preview__cell {
+  position: absolute;
+  border: 1.5px solid #1a1a1a;
+  box-sizing: border-box;
+}

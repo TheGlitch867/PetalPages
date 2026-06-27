@@ -1,0 +1,81 @@
+.dreams-page .page-background__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 40px 48px;
+  text-align: center;
+}
+
+.dreams-page__title {
+  font-family: "Caveat", cursive;
+  font-size: 56px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 32px;
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.95),
+    0 0 16px rgba(255, 255, 255, 0.8);
+}
+
+.dreams-page__dream {
+  width: 100%;
+  max-width: 760px;
+  min-height: 220px;
+  padding: 28px 32px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  font-family: "Caveat", cursive;
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1a1a1a;
+  text-align: center;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.dreams-page__dream::placeholder {
+  color: #888;
+  font-weight: 600;
+}
+
+.dreams-page__dream:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+.dreams-page__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dreams-page__save {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.dreams-page__save:hover {
+  background: #333;
+}
+
+.dreams-page__saved {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e7d32;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+}

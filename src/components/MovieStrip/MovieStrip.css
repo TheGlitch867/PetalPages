@@ -1,0 +1,38 @@
+.movie-strip {
+  background: #111;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+.movie-strip__sprockets {
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #111 0,
+    #111 6px,
+    #fff 6px,
+    #fff 14px,
+    #111 14px,
+    #111 20px
+  );
+}
+
+.movie-strip__sprockets--top {
+  margin-bottom: 8px;
+}
+
+.movie-strip__sprockets--bottom {
+  margin-top: 8px;
+}
+
+.movie-strip__frames {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 720px) {
+  .movie-strip__frames {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

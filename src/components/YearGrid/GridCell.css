@@ -1,0 +1,29 @@
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.grid-cell:not(.grid-cell--disabled):hover {
+  transform: scale(1.15);
+  z-index: 1;
+  box-shadow: 0 0 0 2px #333;
+}
+
+.grid-cell--selected {
+  box-shadow: 0 0 0 2px #333;
+  z-index: 2;
+}
+
+.grid-cell--disabled {
+  cursor: default;
+  border-color: #ccc;
+}
+
+.grid-cell--disabled:hover {
+  transform: none;
+  box-shadow: none;
+}

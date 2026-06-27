@@ -1,0 +1,46 @@
+.read-rainbow-page .page-background__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px 48px;
+  max-width: 820px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.read-rainbow-page__title {
+  font-family: "Caveat", cursive;
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.read-rainbow-page__sub {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.read-rainbow-page__stats {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 24px;
+}
+
+.read-rainbow-page__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px 20px;
+  width: 100%;
+  max-width: 480px;
+}
+
+@media (max-width: 400px) {
+  .read-rainbow-page__grid {
+    max-width: 220px;
+  }
+}

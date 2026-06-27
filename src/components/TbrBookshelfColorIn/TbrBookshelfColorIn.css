@@ -1,0 +1,34 @@
+.tbr-bookshelf {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 8px;
+  padding: 12px 8px 4px;
+  background: #fffef8;
+  border: 2px solid #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.tbr-bookshelf__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tbr-bookshelf__part {
+  cursor: pointer;
+  transition: filter 0.12s ease;
+}
+
+.tbr-bookshelf__part:hover {
+  filter: brightness(0.95);
+}
+
+.tbr-bookshelf__part:focus-visible {
+  outline: 2px solid #6b3fa0;
+  outline-offset: 1px;
+}
+
+.tbr-bookshelf__rings {
+  pointer-events: none;
+}

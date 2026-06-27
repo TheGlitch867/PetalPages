@@ -1,0 +1,266 @@
+.review-day-page .page-background__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 24px 48px;
+}
+
+.review-day-page__header {
+  text-align: center;
+  margin-bottom: 28px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.review-day-page__title {
+  font-family: "Caveat", cursive;
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 16px;
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.95),
+    0 0 16px rgba(255, 255, 255, 0.8);
+}
+
+.review-day-page__date-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.review-day-page__date-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+
+.review-day-page__date-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.review-day-page__date-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+}
+
+.review-day-page__today-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.review-day-page__hint {
+  font-size: 13px;
+  color: #888;
+  margin: 12px 0 0;
+  font-style: italic;
+}
+
+.review-day-page__sections {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review-day-section {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.review-day-section__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 14px;
+}
+
+.review-day-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-day-rating__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+}
+
+.review-day-rating__option:hover:not(:disabled) {
+  background: #fafafa;
+}
+
+.review-day-rating__option--active {
+  border-color: #6b3fa0;
+  background: #f9f5ff;
+  box-shadow: inset 0 0 0 1px #6b3fa0;
+}
+
+.review-day-rating__option:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.review-day-rating__swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.review-day-rating__label {
+  font-weight: 600;
+}
+
+.review-day-moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-day-moods__btn {
+  padding: 8px 14px;
+  border: 2px solid;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.review-day-moods__btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.review-day-moods__btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.review-day-feelings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-day-feelings__chip {
+  padding: 7px 12px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #333;
+}
+
+.review-day-feelings__chip:hover:not(:disabled) {
+  border-color: #999;
+  background: #fafafa;
+}
+
+.review-day-feelings__chip--selected {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.review-day-feelings__chip:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.review-day-section__note {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.review-day-section__note:focus {
+  outline: 2px solid #6b3fa0;
+  outline-offset: 1px;
+  border-color: #6b3fa0;
+}
+
+.review-day-section__note:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.review-day-page__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.review-day-page__save {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.review-day-page__save:hover {
+  background: #333;
+}
+
+.review-day-page__saved {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e7d32;
+}

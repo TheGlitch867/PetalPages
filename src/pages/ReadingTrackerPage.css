@@ -1,0 +1,10 @@
+.reading-tracker-page .tracker-page__title {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.8),
+    0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.reading-tracker-page .tracker-page__content {
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}

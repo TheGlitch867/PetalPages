@@ -1,0 +1,244 @@
+.trends-page .page-background__content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 32px 40px;
+}
+
+.trends-page__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.trends-page__icon {
+  font-size: 18px;
+}
+
+.trends-page__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.trends-page__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.trends-page__cards--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trends-page__cards--four {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.trends-page__cards--five {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trends-page__cards--seven {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 800px) {
+  .trends-page__cards--three,
+  .trends-page__cards--four,
+  .trends-page__cards--five,
+  .trends-page__cards--seven {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trends-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: 12px;
+}
+
+.trends-card--mood {
+  background: #1e3a5f;
+  color: #fff;
+}
+
+.trends-card--anxiety {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.trends-card--fitness {
+  background: #1e5a8a;
+  color: #fff;
+}
+
+.trends-card--reading {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.trends-card--reading .trends-card__value--dark,
+.trends-card--reading .trends-card__value {
+  color: #6b3fa0;
+}
+
+.trends-card--reading .trends-card__label,
+.trends-card--reading .trends-card__sub {
+  color: #444;
+}
+
+.trends-card--sleep {
+  background: #ede7f6;
+  border: 1px solid #d1c4e9;
+}
+
+.trends-card--stress {
+  background: #fff3e0;
+  border: 1px solid #ffcc80;
+}
+
+.trends-card--stress .trends-card__value--dark {
+  color: #e65100;
+}
+
+.trends-card--crying {
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+}
+
+.trends-card--crying .trends-card__value--dark {
+  color: #1565c0;
+}
+
+.trends-card--sleep .trends-card__value--dark {
+  color: #4527a0;
+}
+
+.trends-card--sleep .trends-card__label--dark {
+  color: #5e35b1;
+}
+
+.trends-card--sleep .trends-card__sub--dark {
+  color: #6a1b9a;
+}
+
+.trends-card__icon {
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.trends-card__icon--muted {
+  color: #888;
+}
+
+.trends-card__value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.trends-card__value--dark {
+  color: #111;
+}
+
+.trends-card__label {
+  margin: 2px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.trends-card__label--dark {
+  color: #444;
+  opacity: 1;
+}
+
+.trends-card__sub {
+  margin: 4px 0 0;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.trends-card__sub--dark {
+  color: #666;
+  opacity: 1;
+}
+
+.trends-page__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.trends-page__toolbar-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.trends-page__pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.trends-page__pill {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+}
+
+.trends-page__pill:hover {
+  border-color: #999;
+}
+
+.trends-page__pill--active {
+  background: #f5c842;
+  border-color: #e5b830;
+  color: #3d3200;
+}
+
+.trends-page__stats {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 720px) {
+  .trends-page__stats {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.trends-page__empty {
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  color: #555;
+}
+
+.trends-page__empty p {
+  margin: 0;
+}
+
+.trends-page__empty-sub {
+  margin-top: 8px !important;
+  font-size: 14px;
+  color: #888;
+}
